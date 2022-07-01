@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários</title>
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div  class="card-signin">
+                <h1 class="card-signup__title">
+                    Login Account
+                    <img src="./assets/img/icon-user.png" alt="Icone de usuário">
+                </h1>
+                <p class="card-signup__description">
+                    Hello , welcome back to our account !
+                </p>
+
+                <div class="card-signup__group-btn">
+                    <button class="group-btn__email btn--active">Email</button>
+                    <button class="group-btn__phone btn--inactive">
+                        <a href="#signin">
+                            Phone Number
+                        </a>                        
+                    </button>
+                </div>
+
+                <form class="card-signin__form" action="#" method="form">
+                    <input class="form__input" name="email" type="text" placeholder="Email address">
+                    <input class="form__input" name="password" type="password" placeholder="Password">
+                    <p class="form__forgot-password">Forgot Password ?</p>
+                    <button type="submit" class="card-signup__btn-send">Login</button>
+                </form>
+
+            </div>
+
+            <div id="signin" class="card-signup">
+                <h1 class="card-signup__title">
+                    Login Account
+                    <img src="./assets/img/icon-user.png" alt="Icone de usuário">
+                </h1>
+                <p class="card-signup__description">
+                    Hello , welcome back to our account !
+                </p>
+
+                <div class="card-signup__group-btn">
+                    <button class="group-btn__email btn--inactive">                            
+                        <a href="#signup">
+                            Email
+                        </a>                            
+                    </button>
+                    <button class="group-btn__phone btn--active">
+                        Phone Number
+                    </button>
+                </div>
+
+                <form class="card-signup__form" action="#" method="GET">
+                    <input class="form__input" name="phone" type="text" placeholder="Enter Phone Number">
+                    <button type="submit" class="card-signup__btn-send card-signup__btn-send--OTP">
+                        Send OTP
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('./responsive.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway';
+  font-style: normal;
+}
+
+a {
+  all: unset;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.card-signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;  
+}
+
+.card-signin__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-signin:target {
+  display: none;
+}
+
+.card-signup {
+  display: none;
+}
+
+.card-signup:target {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+}
+
+.card-signup__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.card-signup__description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #636363;
+  margin-bottom: 26px;
+}
+
+.card-signup__group-btn {
+  display: flex;
+  margin: 4px 0 38px 0;
+}
+
+.group-btn__email {
+  border-radius: 8px 0px 0px 8px;
+  padding: 14px 54px;
+  cursor: pointer;
+}
+
+.group-btn__phone {
+  border-radius: 0 8px 8px 0;
+  padding: 16px 30px;
+  cursor: pointer;
+}
+
+.btn--active {
+  border: none;
+  background: #6A00BF;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);  
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.btn--inactive {  
+  border: 1px solid #000000;
+  filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.08));
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.card-signup__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  max-width: 340px;
+  max-height: 56px;
+  border: 1px solid #818181;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.12));
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6F6F6F;
+  padding: 18px 0 18px 18px;
+  margin-top: 12px;
+}
+
+.form__forgot-password {
+  text-align: end;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4285F4;
+  margin: 6px 8px 6px 0;
+  cursor: pointer;
+}
+
+.card-signup__btn-send {
+  border: none;
+  background: #190152;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  padding: 16px 146px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.card-signup__btn-send--OTP {
+  padding: 16px 128px;
+}
+
+
+
+
